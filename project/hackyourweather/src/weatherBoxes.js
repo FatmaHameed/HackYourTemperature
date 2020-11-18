@@ -1,5 +1,9 @@
 import React from 'react';
 
+const API_KEY = process.env.REACT_APP_OPENWEATHERMAP_API_KEY
+
+console.log(API_KEY)
+
 const data = require('../city-weather.json');
 
 const WeatherBox = () => {
@@ -27,12 +31,13 @@ const WeatherBox = () => {
   });
 
   return (
-  
-  
+
+
   <div className="boxContainer">{weatherList}</div>
- 
+
   )
 
 };
 
-export default WeatherBox;
+export default WeatherBox; 
+ 

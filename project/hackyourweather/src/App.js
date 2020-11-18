@@ -1,14 +1,17 @@
 import Title from './components/header'
 import './App.css';
-import WeatherBox from './components/weatherBoxes';
-
-const data = require('./city-weather.json');
+import Main from './components/Main';
+// import InputCity from './components/input'
 
 function App() {
   return (
     <div className="App">
+      <header className="header">
       <Title title ="Weather" />
-      <WeatherBox />
+      {/* <WeatherBox /> */}
+      {/* <InputCity /> */}
+      <Main />
+      </header>
     </div>
   );
 }
